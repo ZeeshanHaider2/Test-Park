@@ -12,7 +12,7 @@ export default function App(){
   useEffect(
     () =>
    onSnapshot(collection(db,"demoUsers"), (snapshot) => 
-     setdemoUsers(snapshot.docs.map((doc) => ({...doc.data(),id:doc.id})))  //only returns data Not the "id"
+     setdemoUsers(snapshot.docs.map((doc) => ({...doc.data(),id:doc.id})))  
     ),
     [] 
   );
