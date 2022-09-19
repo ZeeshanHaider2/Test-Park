@@ -1,4 +1,4 @@
-import { onSnapshot, collection } from "firebase/firestore";
+import { onSnapshot, collection } from "firebase/firestore"; //auto import for calling snapshot function
 import { useEffect, useState } from "react";
 import db from "./firebase";
 
@@ -8,7 +8,7 @@ const Dot = ({}) => {
 
 function App(){
   const [demoUsers,setdemoUsers] = useState([{name:"loading...", id:"initial"}]);
-  console.log(demoUsers);
+  //console.log(demoUsers);
   useEffect(
     () =>
    onSnapshot(collection(db,"demoUsers"), (snapshot) => 
