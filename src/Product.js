@@ -6,7 +6,7 @@ const Dot = ({}) => {
 
 }; 
 
-export default function App(){
+function App(){
   const [demoUsers,setdemoUsers] = useState([{name:"loading...", id:"initial"}]);
   console.log(demoUsers);
   useEffect(
@@ -34,3 +34,4 @@ export default function App(){
   );
 }
 
+export default App;
